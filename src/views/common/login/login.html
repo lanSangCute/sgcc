@@ -1,0 +1,48 @@
+<div>
+    <div style="height:100vh" id="nestArea"></div>
+
+    <vue-canvas-nest :config="nestConfig" :el="'#nestArea'"></vue-canvas-nest>
+    
+    <div class="container-card-center cm-an-fadeIn-longs">
+        <el-card class="self-card">
+            <header slot="header">
+                {{projectName}}
+            </header>
+            <main>
+                <!-- account -->
+                <el-input
+                    clearable
+                    v-model="account"
+                    placeholder="账号"
+                >
+                    <i slot="prepend" class="fa fa-account"></i>
+                </el-input>
+         
+                <!-- password -->
+                <el-input
+                    clearable
+                    v-model="password"
+                    placeholder="密码"
+                >
+                    <i slot="prepend" class="fa fa-password"></i>
+                </el-input>
+
+                <div class="">
+                  <el-checkbox v-model="saveAccount" >记住账号</el-checkbox>
+                </div>
+
+                <el-button
+                    type="primary"
+                    class="login-btn"
+                    @click="pageLogin"
+                >
+                    登陆
+                </el-button>
+            </main>
+        </el-card>
+        <footer>
+          <div class="brand-show">{{providerName}}</div>
+        </footer>
+    </div>
+    </transition>
+</div>

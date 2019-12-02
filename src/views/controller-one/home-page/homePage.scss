@@ -1,0 +1,7 @@
+$space:1rem;
+.el-card{
+    margin-bottom:$space;
+    &:last-child{
+        margin-left:1rem;
+    }
+}

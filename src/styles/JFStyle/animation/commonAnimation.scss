@@ -1,0 +1,11 @@
+@keyframes Animation-FadeIn{
+    from {opacity:0}
+    to{opacity:1}
+}
+
+.cm-an-fadeIn{
+    animation:Animation-FadeIn .3s;
+}
+.cm-an-fadeIn-long{
+    animation:Animation-FadeIn .6s ease-out;
+}

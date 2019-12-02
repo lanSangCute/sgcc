@@ -1,0 +1,14 @@
+.cmFire-search-item{
+    ._label{
+        font-size:12px;
+        color:$light-line-font;
+    }
+    ._content{
+        font-size:14px;
+        color:$light-font-color;
+    }
+    kbd{
+        @include Base-family();
+        @include Badge($color-secondary,small);
+    }
+}

@@ -1,0 +1,17 @@
+
+@mixin webkitScrollBar(){
+  ::-webkit-scrollbar{
+    display:block;
+    background-color:$color-secondary;
+    width:.6rem;
+    height:.5rem;
+    border:1px solid $color-secondary;
+  }
+  ::-webkit-scrollbar-thumb{
+    background-color:$color-light;
+    border-radius:$base-radius;
+    &:hover{
+      background:lighten($color-muted,10%);
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+    "navList":[
+        {
+            "label":"前端规范",
+            "children":[
+                {"label":"代码规范","markdown":"./mds/frontend-writer.md"}
+            ]
+        },
+        {
+            "label":"前端App介绍",
+            "children":[
+                {
+                    "label":"btn","markdown":"./mds/btn.md","iframe":"http://localhost:4200/exhibition/btnPage" 
+                },
+                {
+                    "label":"list","markdown":"./mds/list.md","iframe":"http://localhost:4200/exhibition/listPage"
+                },
+                {
+                    "label":"card-one","markdown":"./mds/card.md"
+                }
+            ]
+        },
+        {
+            "label":"前端PC介绍",
+            "children":[
+                {
+                    "label":"card-one2","markdown":"./mds/my.md"
+                },
+                {
+                    "label":"sass","markdown":"./mds/sass.md"
+                }
+            ]
+        },
+        {
+            "label":"后端规范",
+            "children":[
+                {    
+                 "label":"代码规范","markdown":"./mds/backend-writer.md"
+                },
+                {
+                    "label":"feign服务调用","markdown":"./mds/backend-feign.md"
+                },
+                {
+                    "label":"feign远程调用","markdown":"./mds/backend-feign-remote.md"
+                }
+            ]
+        },
+        {
+            "label":"后端分布式事务",
+            "children":[
+                {
+                    "label":"seata-deploy","markdown":"./mds/seata.md"
+                },
+                {
+                    "label":"seata-deploy2","markdown":"./mds/seata2.md"
+                }
+            ]
+        },
+        {
+            "label": "aa",
+            "markdown": "./mds/yangguifang.md",
+            "iframe": "http://localhost:3000"
+        }
+      
+    ]
+}

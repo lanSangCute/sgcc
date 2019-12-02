@@ -1,0 +1,41 @@
+$utl:(
+  size:12,
+  v-line:14px
+);
+@function getUti($key){
+  @return map-get($utl,$key);
+}
+$flex-count:6;
+$base-size:5px;
+$color-u-lt:lighten(#ddd,5%);
+$percent-len:(
+  25:25%,
+  50:50%,
+  75:75%,
+  100:100%
+);
+$font-size:(
+  sm:12px,
+  md:16px,
+  lg:20px
+);
+$abs-pos:(
+  t:top,
+  l:left,
+  r:right,
+  b:bottom
+);
+$glob-pos:(
+    t:top,
+    b:bottom,
+    l:left,
+    r:right,
+    x:x,
+    y:y
+);
+$rotate-pos:(
+  45:45deg,
+  90:90deg,
+  180:180deg,
+);
+$bezier-time:.3s cubic-bezier(0.645, 0.045, 0.355, 1);

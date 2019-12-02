@@ -1,0 +1,6 @@
+@function hoverColor($color){
+  @return mix($color,white,10%);
+}
+@function LightColor($color){
+  @return rgba($color,.1);
+}

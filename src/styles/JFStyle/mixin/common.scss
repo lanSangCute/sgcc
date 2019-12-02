@@ -1,0 +1,26 @@
+@mixin headerBottom{
+
+  height:$nav-height !important;
+}
+@mixin Ellipsis($useDisplay:true){
+  text-overflow:ellipsis;
+  @if($useDisplay){
+    display:inline-block;
+  }
+  overflow:hidden;
+}
+
+@mixin Icon($w){
+  width:$w;
+  height:$w;
+  font-size:$w !important;
+}
+
+@mixin outlineHover{
+  background:$color-main-light;
+  color:$color-bg !important;
+  cursor: pointer;
+  i{
+    color:$btn-color !important;
+  }
+}

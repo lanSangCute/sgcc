@@ -1,0 +1,36 @@
+<!--cmFire-container-->
+
+<cmFire-container 
+  :navData="navData" 
+  :useSearch="false"
+  :autoNavTop="true"
+  :scrollHeaderToggle="false"
+>
+  <!-- <div slot="nav-brand" class="center-column">
+    <img src="/image/fire.png" style="height:100px" />
+    <div class="cmFire-brand-title">
+      cmFire <span class="cm-text-des"></span>
+    </div>
+  </div> -->
+  <nav slot="header-aside" class="cmFire-header-line">
+    aside
+  </nav>
+  <nav slot="header-left" class="cmFire-header-line">
+    
+  </nav>
+
+  <nav slot="header-right" class="cmFire-header-line">
+    <self-user-drop></self-user-drop>
+  </nav>
+  
+  <nav slot="header-toggle-right" class="cmFire-header-toggle-line">
+    Git
+  </nav>
+
+  <main slot="body">
+      <router-view></router-view>
+  </main>
+  <!-- <footer slot="footer">
+   
+  </footer> -->
+</cmFire-container>

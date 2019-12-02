@@ -1,0 +1,6 @@
+#{$importList}
+
+export default [
+    #{$routerList}
+]
+
