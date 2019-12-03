@@ -8,68 +8,38 @@ export default {
       {id:6,name:'产品上架',status:'0'}
     ],
     analy:[
-      {icon:'',name:'系统',value:'102'},
-      {icon:'',name:'数据库',value:'36'},
-      {icon:'',name:'数据表',value:'82'},
-      {icon:'',name:'表字段',value:'1032'},
-      {icon:'',name:'模型',value:'28'},
-      {icon:'',name:'总存储',value:'1PB'}
+      {icon:'system',name:'系统',value:'102'},
+      {icon:'dataBase',name:'数据库',value:'36'},
+      {icon:'dataTable',name:'数据表',value:'82'},
+      {icon:'angular',name:'表字段',value:'1032'},
+      {icon:'models',name:'模型',value:'28'},
+      {icon:'store',name:'总存储',value:'1PB'}
     ],
-    dataBase:[
-      {date:'11.17',value:'5000'},
-      {date:'11.18',value:'12000'},
-      {date:'11.19',value:'3500'},
-      {date:'11.20',value:'12500'},
-      {date:'11.21',value:'14500'},
-      {date:'11.22',value:'6000'},
-      {date:'11.23',value:'3000'},
-      {date:'11.24',value:'5500'},
-      {date:'11.25',value:'8000'},
-      {date:'11.26',value:'6000'},
-      {date:'11.27',value:'9200'},
-      {date:'11.28',value:'8800'}
+    assetTHead:[
+      {prop:'source',label:'数据源',width:'145px',align:'left'},
+      {prop:'tableNum',label:'表量',width:'50x',align:'right'},
+      {prop:'dataNum',label:'数据量',width:'65px',align:'right'},
+      {prop:'storeNum',label:'存储容量',width:'80px',align:'center'},
     ],
-    assetTHead:['数据源','表量','数据量','存储容量'],
-    assetTBody:[
-      {id:'1',source:'人资管控系统',tableNum:53,dataNum:165,storeNum:'512G'},
-      {id:'2',source:'基建管理信息系统',tableNum:128,dataNum:863,storeNum:'2T'},
-      {id:'3',source:'电力市场交易平台',tableNum:663,dataNum:264,storeNum:'104G'},
-      {id:'4',source:'人资管控系统2',tableNum:34,dataNum:345,storeNum:'63G'},
-      {id:'5',source:'基建管理信息系统2',tableNum:248,dataNum:90,storeNum:'82G'},
-      {id:'6',source:'电力市场交易平台2',tableNum:153,dataNum:165,storeNum:'512G'}
+    moduleTHead:[
+      {prop:'name',label:'模型名称',width:'200px',align:'left'},
+      {prop:'time',label:'发布时间',width:'150px',align:'left'},
+      {prop:'star',label:'评分',width:'250px',align:'left'},
+      {prop:'btnArray',label:'操作',width:'',align:'left'},
     ],
-    moduleTHead:['模型名称','发布时间','评分','操作'],
-    moduleTBody:[
-      {name:'机器学习与人工智能模型',time:'2019-11-21',star:3,btnArray:[0]},
-      {name:'几件管理信息系统模型',time:'2019-11-21',star:2,btnArray:[0]},
-      {name:'电力市场交易平台模型',time:'2019-11-21',star:5,btnArray:[0]},
-      {name:'人资管控系统模型',time:'2019-11-21',star:3,btnArray:[0]},
-      {name:'几件管理信息系统模型',time:'2019-11-21',star:1,btnArray:[0]}
+    unitTHead:[
+      {prop:'name',label:'名称',width:'120px',align:'left'},
+      {prop:'percent',label:'完整率',width:'',align:'right'},
+      {prop:'btnArray',label:'操作',width:'100px',align:'left'},
     ],
-    unitSlider:[
-      {name:'目录实体',percent:65},
-      {name:'表名描述',percent:52},
-      {name:'字段名描述',percent:84}
+    rankGroup:[
+      {label:'data',name:'数据集'},
+      {label:'model',name:'数据模型'},
+      {label:'product',name:'数据产品'}
     ],
-    unitTHead:['名称','完整率','操作'],
-    unitTBody:[
-      {name:'财务管控系统',percent:89,btnArray:[0]},
-      {name:'营销业务应用',percent:56,btnArray:[0]},
-      {name:'PMS2.0',percent:70,btnArray:[0]},
-      {name:'财务管控系统',percent:65,btnArray:[0]},
-      {name:'营销业务应用',percent:68,btnArray:[0]}
-    ],
-    rankTHead:['排名','数据名称','类型'],
-    rankTBody:[
-      {rank:1,name:'北京录用的毕业生人数',type:'用工状况'},
-      {rank:2,name:'上海高技能人才比例',type:'人员素质'},
-      {rank:3,name:'广州组织结构报批率',type:'组织管理'},
-      {rank:4,name:'河北毕业人数',type:'用工状况'},
-      {rank:5,name:'南京高技能人才统计',type:'人员素质'},
-      {rank:6,name:'湖南组织结构',type:'组织管理'},
-      {rank:7,name:'江苏人才率',type:'用工状况'},
-      {rank:8,name:'河南人力培养计划',type:'人员素质'},
-      {rank:9,name:'山东组织机构',type:'组织管理'},
-      {rank:10,name:'浙江组织机构',type:'用工状况'}
+    rankTHead:[
+      {prop:'rank',label:'排名',width:'',align:'center'},
+      {prop:'name',label:'数据名称',width:'',align:'left'},
+      {prop:'type',label:'类型',width:'',align:'left'},
     ]
 };

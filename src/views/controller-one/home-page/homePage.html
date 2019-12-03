@@ -1,25 +1,36 @@
-<div>
-    <el-card>
-        
+<div class="home-page">
+    <el-card>  
+        <titles :title="'场景导向'"><model></model> </titles>
     </el-card>
-
-    <el-card>
-
+    <el-card> 
+        <titles :title="'统计情况'"><analy></analy> </titles>
     </el-card>
 
     <div class="flex">
-        <el-card class="flex-2"></el-card>
-        
-        <el-card class="flex-1"></el-card>
+        <el-card class="flex-2">
+            <titles :title="'数据表趋势'"><data-base></data-base></titles>
+        </el-card>
+        <el-card class="flex-1">
+            <titles :title="'资产概况'"><asset></asset></titles>
+        </el-card>
     </div>
+
     <div class="flex">
         <div class="flex-2">
-            <el-card></el-card>
+            <el-card>
+                <titles :title="'已发布模型'"><module></module></titles>
+            </el-card>
             <div class="flex">
-                <el-card class="flex-1">1</el-card>
-                <el-card class="flex-1">2</el-card>
+                <el-card class="flex-1">
+                    <titles :title="'元数据质量概况'"><unit-slider></unit-slider></titles>
+                </el-card>
+                <el-card class="flex-1">
+                    <titles :title="'元数据质量'"><unit></unit></titles>
+                </el-card>
             </div>
         </div>
-        <el-card class="flex-1"></el-card>
+        <el-card class="flex-1">
+            <rank></rank>
+        </el-card>
     </div>
 </div>

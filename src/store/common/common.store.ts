@@ -1,5 +1,5 @@
 import {Module, ActionContext} from "vuex";
-import {NavListItem,getFirstNav,NavListResult} from "../../ztwComponents/index";
+import {NavListItem,getFirstNav,NavListResult} from "../../mainComponent/index";
 import {navData} from "../../views/navData";
 
 export interface CommonState{

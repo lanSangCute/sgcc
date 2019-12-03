@@ -1,5 +1,5 @@
 {
-  "name": "app2",
+  "name": "pc",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -15,6 +15,7 @@
     "@baiducloud/sdk": "^1.0.0-rc.10",
     "cache-ajax": "3.0.0",
     "canvas-nest.js": "^2.0.4",
+    "chart.js": "^2.9.3",
     "commander": "^4.0.0",
     "copy-dir": "^1.2.0",
     "core-js": "^2.6.5",
@@ -25,6 +26,7 @@
     "mermaid": "^8.4.2",
     "vue": "^2.6.10",
     "vue-canvas-nest": "^2.0.0",
+    "vue-chartjs": "^3.5.0",
     "vue-class-component": "^7.0.2",
     "vue-property-decorator": "^8.1.0",
     "vue-router": "^3.0.3",

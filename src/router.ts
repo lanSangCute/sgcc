@@ -7,7 +7,7 @@ import controllerOneRoutes from "./views/controller-one/controllerOne.module";
 import store from "./store";
 import {allRouteEnter} from "@/config/config";
 import Import from "./views/viewImport";
-import { getFirstNav, NavListItem, NavListResult } from './ztwComponents';
+import { getFirstNav, NavListItem, NavListResult } from './mainComponent';
 import { selectFirstNav } from './store/common/common.store';
 
 

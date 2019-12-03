@@ -1,1 +1,0 @@
-export const isMobile=/Mobile/.test(navigator.appVersion);

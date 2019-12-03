@@ -1,8 +1,8 @@
 import Vue from 'vue';
 import App from './App.vue';
 import ElementUi from "element-ui";
-//ztwComponent 引入
-import "./ztwComponents/ztwUI";
+//mainComponent 引入
+import "./mainComponent/ztwUI";
 
 import store from './store';
 import router from './router';

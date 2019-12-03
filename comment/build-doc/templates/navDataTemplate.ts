@@ -1,5 +1,5 @@
 
-import {NavListItem} from "../ztwComponents/index";
+import {NavListItem} from "../../../src/mainComponent/index";
 
 export {
   NavListItem

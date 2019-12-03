@@ -1,7 +1,7 @@
 import {PublicInterface} from "./public.interface";
-export const isDev=false;
+export const isDev=true;
 export const usePrefix=true;
-export const hostPath="http://106.12.202.175:4300";
+export const hostPath="";
 
 export const projectName='项目';
 export const providerName='xxx';
