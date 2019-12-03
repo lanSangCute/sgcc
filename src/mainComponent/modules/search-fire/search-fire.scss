@@ -1,0 +1,37 @@
+
+
+
+
+.cmFire-search{
+    ._wrapper{
+        @include AutoFill($fire-search-wrapper);
+        @include Radius();
+        @include Block(flex);
+        @include Rel();
+        ._input-wrapper{
+            @include Flex-auto();
+            @include Rel();
+        }
+        ._input{
+            @include AutoFill($fire-search-input);
+            @include Base-input();
+            @include Abs-full();
+            @include Input-holder(){
+                color:$fire-search-placeholder-color;
+            }
+        }
+        ._place-close{
+            @include Iflex-center();
+            @include AutoFill($fire-search-place-close);
+        }
+        ._place-prefix{
+            @include Iflex-center();
+            @include AutoFill($fire-search-place-prefix);
+        }
+        ._place-suffix{
+            @include Iflex-center();
+            @include AutoFill($fire-search-place-suffix)
+        }
+    }
+  
+}

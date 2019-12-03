@@ -1,0 +1,74 @@
+$cmFire-primary-li-h:2.8rem !default;
+$cmFire-secondary-li-h:2.2rem !default;
+$cmFire-collapse-indent:2rem !default;
+
+
+
+.cmFire-nav{
+  margin-top:$fire-nav-margin-top;
+  background:$fire-nav-bg;
+  color:$fire-nav-color;
+
+  .brand{
+    @include AutoFill($fire-nav-brand);
+
+  }
+  .search{
+    @include AutoFill($fire-nav-search);
+    @include Light-bottom-shadow();
+  }
+}
+
+
+.cmFire-line{
+    padding:.5rem;
+    display:flex;
+    align-items:center;
+    position:relative;
+    justify-content: space-between;
+    &.active{
+        color:$fire-nav-line-active-color;
+        background:$fire-nav-line-active-bg;
+    }
+    &>label{
+      &.icon{
+        @include line-center();
+        &>i{
+          margin-left:$fire-nav-line-i-margin-left;
+          margin-right:$fire-nav-line-i-margin-right;
+        }
+      }
+    }
+}
+
+.cmFire-nav-primary-li{
+    @extend .cmFire-line;
+    height:$cmFire-primary-li-h;
+    &>label{
+      margin-left:.3rem;
+    }
+    &>span{
+      margin-right:.3rem;
+    }
+    i.arrow{
+      transition:.2s ease-out;
+    }
+    &.open{
+        i.arrow{
+            transform:rotate(90deg);
+        }
+    }
+}
+.cmFire-nav-secondary-li{
+    @extend .cmFire-line;
+    height:$cmFire-secondary-li-h;
+}
+.cmFire-nav-primary-collapse{
+    .cmFire-nav-secondary-li{
+        padding-left:$cmFire-collapse-indent;
+    }   
+}
+.cmFire-brand-title{
+  @include Text(brand);
+}
+//color配色

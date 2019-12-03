@@ -1,0 +1,72 @@
+@mixin MarkdownBadge($color,$important:null){
+    @if $important{
+        color:$color !important;
+    }
+    @else{
+        color:$color;
+    }
+
+    @if $important{
+        background:rgba($color,.1) !important;
+    }
+    @else{
+        background:rgba($color,.1);
+    }
+    border-radius:map-get($radius,badge);
+    padding:$markdown-badge-padding;
+    @include Base-family();
+}
+
+.cmFire-markdown{
+    font-size:$markdown-font;
+    color:$markdown-color;
+    line-height:$markdown-line-height;
+    code.hljs{
+        border-radius:$markdown-code-radius;
+        font-size:$markdown-code-font;
+        line-height:$markdown-code-line-height;
+        font-family: $markdown-code-family;
+        padding:$markdown-code-padding;
+    }
+    .hljs-comment{
+        @include Base-family();
+        font-style:normal;
+    }
+    code:not(.hljs){
+        @include MarkdownBadge($markdown-badge-bg);
+    }
+    h2{
+        border-bottom:1px solid $markdown-bg;
+        padding-bottom:$markdown-h2-padding-b;
+        margin-bottom:$markdown-h2-margin-b;
+        padding-top:$markdown-h2-padding-t;
+    }
+    h4{
+        border-left:$markdown-h4-border;
+        padding-left:$markdown-h4-padding;
+    }
+    pre{
+        margin-bottom:2em;
+    }
+    table{
+        @include Deep-card-shadow();
+        thead{
+            tr{
+                font-size:13px;
+                background:$markdown-bg;
+                th{
+                    padding:10px;
+                }
+            }
+        }
+        border-collapse:collapse;
+        td{
+            border:1px solid $light-thin-color;
+            padding:10px 8px;
+            font-size:12px;
+        }
+        code{
+            @include MarkdownBadge($markdown-badge-table-bg,true);
+        }
+    }
+}
