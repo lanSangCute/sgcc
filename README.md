@@ -18,10 +18,6 @@ npm run test
 ```
 npm run publish
 ```
-
-- 服务器地址:
-http://h-pc-static-test.su.bcebos.com/docs/
-
 使用
 ---
 

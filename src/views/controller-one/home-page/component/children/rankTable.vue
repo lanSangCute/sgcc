@@ -1,14 +1,12 @@
 <template>
 <div>
-    <el-radio-group v-model="tabPosition">
+    <el-radio-group v-model="tabPosition" style="min-width:278px;">
         <el-radio-button :label="item.label" v-for="item in rankGroup" :key="item.label">{{item.name}}</el-radio-button>
     </el-radio-group>
-    <el-table :data="data" stripe style="width: 100%">
+    <el-table :data="data" stripe style="width: 100%" max-height="650px">
         <el-table-column v-for="item in thead" :key="item.prop" :prop="item.prop" :label="item.label" :width="item.width" :align="item.align">
             <template #default="data" v-if="item.prop === 'rank'">
-                <!-- <div v-rank="data.row.rank" > -->
-                    <i v-rank="data.row.rank" class="fa">{{data.row.rank}}</i>
-                    <!-- {{data.row.rank}}</div> -->
+                <div v-rank="data.row.rank" class="fa-fw">{{data.row.rank}}</div>
             </template>
         </el-table-column>
     </el-table>
@@ -24,13 +22,9 @@ import request from '../request';
     directives:{
         rank:{
             bind:(el,binding)=>{
-                console.log(binding.value);
-                let val = binding&&binding.value;
-                let color = 'red',icon = 'fa-redRank';
-                if(parseInt(val) > 3){
-                    color = '#ff9900';
-                    icon = 'fa-yeRank';
-                }
+                let val = binding&&binding.value,
+                    color = parseInt(val) > 3?'#ff9900':'red',
+                    icon = parseInt(val) > 3?'yeRank':'redRank';
                 el.style.color=color;
                 el.classList.add(icon)
             }
@@ -43,12 +37,7 @@ export default class extends Vue{
     rankGroup:Array<object> = config.rankGroup;
     tabPosition:string = 'data';
     @Prop() private active: string;
-    @Watch("active",{immediate:true})
-    watchActive(value:string){
-      console.log(value);
-    }
 }
 </script>
-<style lang="scss">
-
+<style lang="scss" scoped>
 </style>

@@ -1,9 +1,12 @@
 <template>
     <div>
-       <el-table :data="data" stripe style="width: 100%" max-height="300px">
-            <el-table-column v-for="item in thead" :key="item.id" :prop="item.prop" :label="item.label" :width="item.width" :align="item.align">
-                <template #default="data" v-if="item.prop === 'star'">
-                    <el-rate v-model="data.row.star" disabled text-color="#ff9900"> </el-rate>
+       <el-table :data="data" stripe style="width: 98%" max-height="300px">
+            <el-table-column v-for="item in thead" :key="item.name" :prop="item.prop" :label="item.label" :width="item.width" :align="item.align">
+                <template #default="data">
+                    <span v-if="item.prop === 'name'">{{data.row.name}}</span>
+                    <span v-if="item.prop === 'time'">{{data.row.time}}</span>
+                    <el-rate v-if="item.prop === 'star'" v-model="data.row.star" disabled text-color="#ff9900"> </el-rate>
+                    <span v-if="item.prop === 'btnArray'" class="color-blue">{{data.row.btnArray}}</span>
                 </template>
              </el-table-column>
       </el-table>

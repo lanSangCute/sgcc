@@ -2,6 +2,8 @@ $--font-path: '~element-ui/lib/theme-chalk/fonts';
 
 $color-primary:#086B67;
 
+$color-blue:#409EFF;
+
 .home-page{
   .el-radio-button__orig-radio:checked + .el-radio-button__inner {
     color: $color-primary;
@@ -22,5 +24,62 @@ $color-primary:#086B67;
   .el-tabs__active-bar{
     background-color: $color-primary;
   }
+  .mb-15{
+    margin-bottom: 15px;;
+  }
+  .ml-15{
+    margin-left: 15px;
+  }
+  .mt-10{
+    margin-top: 10px;
+  }
+  .mt-30{
+    margin-top: 30px;
+  }
+  .color-blue{
+    color: $color-blue;
+  }
+
+ .redRank {
+  width: 24px;
+  height:32px;
+  background-image: url("../assets/icon-rank-red.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.yeRank {
+  width: 24px;
+  height:32px;
+  background-image: url("../assets/icon-rank-yellow.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.bgActive {
+  width: 102px;
+  height:93px;
+  line-height: 93px;
+  background-image: url("../assets/icon-bg-active.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  color: $color-primary;
+}
+.bgNormal {
+  width: 102px;
+  height:93px;
+  line-height: 93px;
+  background-image: url("../assets/icon-bg-normal.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  color: #fff;
+}
+.font-30{
+  font-size: 30px;
+}
+.font-60{
+  font-size: 60px;
+}
+.color-primary{
+  color: $color-primary;
+}
   
 }

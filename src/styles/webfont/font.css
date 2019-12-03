@@ -110,99 +110,103 @@
   content: "\ea02";
 }
 
-.fa-close::before {
+.fa-arrowRight::before {
   content: "\ea03";
 }
 
-.fa-data::before {
+.fa-close::before {
   content: "\ea04";
 }
 
-.fa-dataBase::before {
+.fa-data::before {
   content: "\ea05";
 }
 
-.fa-dataTable::before {
+.fa-dataBase::before {
   content: "\ea06";
 }
 
-.fa-done::before {
+.fa-dataTable::before {
   content: "\ea07";
 }
 
-.fa-done2::before {
+.fa-done::before {
   content: "\ea08";
 }
 
-.fa-explore::before {
+.fa-done2::before {
   content: "\ea09";
 }
 
-.fa-github::before {
+.fa-explore::before {
   content: "\ea0a";
 }
 
-.fa-gitlab::before {
+.fa-github::before {
   content: "\ea0b";
 }
 
-.fa-manage::before {
+.fa-gitlab::before {
   content: "\ea0c";
 }
 
-.fa-menu::before {
+.fa-manage::before {
   content: "\ea0d";
 }
 
-.fa-model::before {
+.fa-menu::before {
   content: "\ea0e";
 }
 
-.fa-models::before {
+.fa-model::before {
   content: "\ea0f";
 }
 
-.fa-password::before {
+.fa-models::before {
   content: "\ea10";
 }
 
-.fa-person::before {
+.fa-password::before {
   content: "\ea11";
 }
 
-.fa-person-2::before {
+.fa-person::before {
   content: "\ea12";
 }
 
-.fa-redRank::before {
+.fa-person-2::before {
   content: "\ea13";
 }
 
-.fa-right::before {
+.fa-redRank::before {
   content: "\ea14";
 }
 
-.fa-right-thin::before {
+.fa-right::before {
   content: "\ea15";
 }
 
-.fa-search::before {
+.fa-right-thin::before {
   content: "\ea16";
 }
 
-.fa-store::before {
+.fa-search::before {
   content: "\ea17";
 }
 
-.fa-system::before {
+.fa-store::before {
   content: "\ea18";
 }
 
-.fa-theme::before {
+.fa-system::before {
   content: "\ea19";
 }
 
-.fa-yeRank::before {
+.fa-theme::before {
   content: "\ea1a";
+}
+
+.fa-yeRank::before {
+  content: "\ea1b";
 }
 

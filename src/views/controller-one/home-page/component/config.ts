@@ -27,6 +27,7 @@ export default {
       {prop:'star',label:'评分',width:'250px',align:'left'},
       {prop:'btnArray',label:'操作',width:'',align:'left'},
     ],
+    unitPercent:['0','20%','40%','60%','80%','100%'],
     unitTHead:[
       {prop:'name',label:'名称',width:'120px',align:'left'},
       {prop:'percent',label:'完整率',width:'',align:'right'},
@@ -38,7 +39,7 @@ export default {
       {label:'product',name:'数据产品'}
     ],
     rankTHead:[
-      {prop:'rank',label:'排名',width:'',align:'center'},
+      {prop:'rank',label:'排名',width:'',align:'left'},
       {prop:'name',label:'数据名称',width:'',align:'left'},
       {prop:'type',label:'类型',width:'',align:'left'},
     ]

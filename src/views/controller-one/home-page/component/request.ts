@@ -35,7 +35,9 @@ export default {
     {id:'3',source:'电力市场交易平台',tableNum:663,dataNum:264,storeNum:'104G'},
     {id:'4',source:'人资管控系统2',tableNum:34,dataNum:345,storeNum:'63G'},
     {id:'5',source:'基建管理信息系统2',tableNum:248,dataNum:90,storeNum:'82G'},
-    {id:'6',source:'电力市场交易平台2',tableNum:153,dataNum:165,storeNum:'512G'}
+    {id:'6',source:'电力市场交易平台2',tableNum:153,dataNum:165,storeNum:'512G'},
+    {id:'7',source:'电力市场交易平台2',tableNum:153,dataNum:165,storeNum:'512G'},
+
   ],
   moduleTBody:[
     {name:'机器学习与人工智能模型',time:'2019-11-21',star:3,btnArray:'详情'},
@@ -68,6 +70,10 @@ export default {
     {rank:7,name:'江苏人才率',type:'用工状况'},
     {rank:8,name:'河南人力培养计划',type:'人员素质'},
     {rank:9,name:'山东组织机构',type:'组织管理'},
-    {rank:10,name:'浙江组织机构',type:'用工状况'}
+    {rank:10,name:'浙江组织机构',type:'用工状况'},
+    {rank:11,name:'浙江组织机构',type:'用工状况'},
+    {rank:12,name:'浙江组织机构',type:'用工状况'},
+    {rank:13,name:'浙江组织机构',type:'用工状况'},
+    {rank:14,name:'浙江组织机构',type:'用工状况'}
   ]
 };

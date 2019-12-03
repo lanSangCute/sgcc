@@ -1,38 +1,19 @@
 <template>
     <div>
-        <template v-for="item in data">
-            {{item.date}}{{item.value}}
-        </template>
+        <bar-hart></bar-hart>
     </div>
 </template>
 
 <script lang="ts">
 import {Component,Vue} from "vue-property-decorator";
-import { Bar } from 'vue-chartjs'
-import request from '../request';
+import barChart from  '../barChart';
 
 @Component({
-    extends: Bar,
+    components: {
+      'bar-hart':barChart
+    }
 })
-export default class extends Vue<Bar>{
-    data:Array<object> = request.dataBase;
-    chartdata: {
-      labels: ['January', 'February'],
-      datasets: [
-        {
-          label: 'Data One',
-          backgroundColor: '#f87979',
-          data: [40, 20]
-        }
-      ]
-    }
-    options: {
-      responsive: true,
-      maintainAspectRatio: false
-    }
-    // mounted () {
-    //     this.renderChart(this.chartdata, this.options)
-    // }
+export default class extends Vue{
 }
 </script>
 <style lang="scss">
