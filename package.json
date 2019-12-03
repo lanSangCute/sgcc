@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@baiducloud/sdk": "^1.0.0-rc.10",
+    "@types/chart.js": "^2.9.3",
     "cache-ajax": "3.0.0",
     "canvas-nest.js": "^2.0.4",
     "chart.js": "^2.9.3",

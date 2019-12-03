@@ -40,12 +40,12 @@ export default {
 
   ],
   moduleTBody:[
-    {name:'机器学习与人工智能模型',time:'2019-11-21',star:3,btnArray:'详情'},
-    {name:'几件管理信息系统模型',time:'2019-11-21',star:2,btnArray:'详情'},
-    {name:'电力市场交易平台模型',time:'2019-11-21',star:5,btnArray:'详情'},
-    {name:'人资管控系统模型',time:'2019-11-21',star:3,btnArray:'详情'},
-    {name:'几件管理信息系统模型',time:'2019-11-21',star:1,btnArray:'详情'},
-    {name:'几件管理信息系统33',time:'2019-11-21',star:1,btnArray:'详情'}
+    {name:'机器学习与人工智能模型',time:'2019-11-21',star:3,btnArray:'详情',img:'https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg'},
+    {name:'几件管理信息系统模型',time:'2019-11-21',star:2,btnArray:'详情',img:'https://fuss10.elemecdn.com/8/27/f01c15bb73e1ef3793e64e6b7bbccjpeg.jpeg'},
+    {name:'电力市场交易平台模型',time:'2019-11-21',star:5,btnArray:'详情',img:'https://fuss10.elemecdn.com/1/8e/aeffeb4de74e2fde4bd74fc7b4486jpeg.jpeg'},
+    {name:'人资管控系统模型',time:'2019-11-21',star:3,btnArray:'详情',img:'https://fuss10.elemecdn.com/a/3f/3302e58f9a181d2509f3dc0fa68b0jpeg.jpeg'},
+    {name:'几件管理信息系统模型',time:'2019-11-21',star:1,btnArray:'详情',img:'https://fuss10.elemecdn.com/1/34/19aa98b1fcb2781c4fba33d850549jpeg.jpeg'},
+    {name:'几件管理信息系统33',time:'2019-11-21',star:1,btnArray:'详情',img:'https://fuss10.elemecdn.com/0/6f/e35ff375812e6b0020b6b4e8f9583jpeg.jpeg'}
   ],
   unitSlider:[
     {name:'目录实体',percent:65},
@@ -59,6 +59,10 @@ export default {
     {name:'财务管控系统',percent:'65%',btnArray:'详情'},
     {name:'营销业务应用',percent:'68%',btnArray:'详情'},
     {name:'营销业务',percent:'68%',btnArray:'详情'}
+  ],
+  gridTBody:[
+    {title:'财务管控系统',ralation:'90%',desc:'90%',item:'90%',total:'90%'},
+    {title:'财务管控系统2',ralation:'90%',desc:'90%',item:'90%',total:'90%'},
   ],
   rankTBody:[
     {rank:1,name:'北京录用的毕业生人数',type:'用工状况'},

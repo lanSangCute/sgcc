@@ -28,6 +28,13 @@ export default {
       {prop:'btnArray',label:'操作',width:'',align:'left'},
     ],
     unitPercent:['0','20%','40%','60%','80%','100%'],
+    gridTHead:[
+      {prop:'title',label:'名称',width:'120px',align:'left'},
+      {prop:'ralation',label:'目录表关系完整率',width:'120px',align:'left'},
+      {prop:'desc',label:'表描述完整率',width:'120px',align:'left'},
+      {prop:'item',label:'字段描述完整率',width:'120px',align:'left'},
+      {prop:'total',label:'总体完整率',width:'120px',align:'left'}
+    ],
     unitTHead:[
       {prop:'name',label:'名称',width:'120px',align:'left'},
       {prop:'percent',label:'完整率',width:'',align:'right'},
