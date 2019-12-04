@@ -7,3 +7,12 @@
 @import "~element-ui/packages/theme-chalk/src/index";
 
 @import 'JFStyle/jfstyle.scss';
+
+
+.cmFire-container > .cmFire-nav{
+  margin-top: 0px;
+}
+.cmFire-header-base, 
+.cmFire-header-sticky {
+  display: none;
+}
