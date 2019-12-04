@@ -22,13 +22,14 @@
 import {Component,Vue} from "vue-property-decorator";
 import config from '../config';
 import request from '../request';
+import {UUnitModel,GtidModel,TableColumnModel} from '../interface';
 
 @Component({})
 export default class extends Vue{
-    data:Array<object> = request.unitTBody;
-    thead:Array<object> = config.unitTHead;
-    gridData:Array<object> = request.gridTBody;
-    gridThead:Array<object> = config.gridTHead; 
+    data:Array<UUnitModel> = request.unitTBody;
+    thead:Array<TableColumnModel> = config.unitTHead;
+    gridData:Array<GtidModel> = request.gridTBody;
+    gridThead:Array<TableColumnModel> = config.gridTHead; 
 }
 </script>
 <style lang="scss">

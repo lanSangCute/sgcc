@@ -10,11 +10,12 @@
 import {Component,Vue} from "vue-property-decorator";
 import config from '../config';
 import request from '../request';
+import {AssetModel,TableColumnModel} from '../interface';
 
 @Component({})
 export default class extends Vue{
-    data:Array<object> = request.assetTBody;
-    thead:Array<object> = config.assetTHead;
+    data:Array<AssetModel> = request.assetTBody;
+    thead:Array<TableColumnModel> = config.assetTHead;
 }
 </script>
 <style lang="scss">

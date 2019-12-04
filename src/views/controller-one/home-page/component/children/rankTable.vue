@@ -17,6 +17,7 @@
 import {Component,Vue,Prop,Watch} from "vue-property-decorator";
 import config from '../config';
 import request from '../request';
+import {RankModel,TableColumnModel} from '../interface';
 
 @Component({
     directives:{
@@ -32,9 +33,9 @@ import request from '../request';
     }
 })
 export default class extends Vue{
-    data:Array<object> = request.rankTBody;
-    thead:Array<object> = config.rankTHead;
-    rankGroup:Array<object> = config.rankGroup;
+    data:Array<RankModel> = request.rankTBody;
+    thead:Array<TableColumnModel> = config.rankTHead;
+    rankGroup:Array<{label?:string;name?:string}> = config.rankGroup;
     tabPosition:string = 'data';
     @Prop() private active: string;
 }

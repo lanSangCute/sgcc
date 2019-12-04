@@ -9,7 +9,7 @@ export default {
     }
   },
   mounted () {
-    let label = [], dataset = [];
+    let label= [], dataset = [];
     this.data.map(item=>{
         label.push(item.date);
         dataset.push(item.value)

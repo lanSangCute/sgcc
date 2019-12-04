@@ -16,10 +16,11 @@
 import {Component,Vue} from "vue-property-decorator";
 import config from '../config';
 import request from '../request';
+import {UnitSliderModel} from '../interface';
 
 @Component({})
 export default class extends Vue{
-    data:Array<object> = request.unitSlider;
+    data:Array<UnitSliderModel> = request.unitSlider;
     unitPercent:Array<string> = config.unitPercent;
 }
 </script>

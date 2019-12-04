@@ -15,7 +15,7 @@ import rankTable from './rankTable.vue';
 })
 export default class extends Vue{
     activeName:string = 'hot';
-    tabObj:Array<object> = [
+    tabObj:Array<{label?:string;activeName?:string}> = [
         {label:'热点数据榜',activeName:'hot'},
         {label:'最新数据榜',activeName:'new'}
     ]

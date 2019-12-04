@@ -24,6 +24,7 @@
 import {Component,Vue} from "vue-property-decorator";
 import config from '../config';
 import request from '../request';
+import {ModuleModel,TableColumnModel} from '../interface';
 
 @Component({
     directives:{
@@ -31,11 +32,9 @@ import request from '../request';
             bind:(el,binding)=>{
                 el.addEventListener('click',function(e){
                     el.classList.add('op-1')
-                    // el.style.opacity = 1;
                     let closeTag = document.getElementsByClassName('el-icon-circle-close'),imgTag = document.getElementsByClassName('el-img');
                     for (let i = 0; i < closeTag.length; i++) {
                         closeTag[i].addEventListener('click',function(e){
-                            // imgTag[i]['style'].opacity = 0;
                             imgTag[i].classList.add('op-0')
                             el.classList.add('op-0')
                             el.classList.remove('op-1');
@@ -47,16 +46,14 @@ import request from '../request';
         }
     }
 })
+
 export default class extends Vue{
-    data:Array<object> = request.moduleTBody;
-    thead:Array<object> = config.moduleTHead;
-    srcList:any = [];
+    data:Array<ModuleModel> = request.moduleTBody;
+    thead:Array<TableColumnModel> = config.moduleTHead;
+    srcList:Array<string> = [];
     mounted() {
         const that = this;
-        that.data.map(item=>{
-           that.srcList.push(item.img);
-        })
-        console.log(that.srcList)
+        that.data.map((item:ModuleModel)=>that.srcList.push(item.img || ''));
     }
     updated() {
     }

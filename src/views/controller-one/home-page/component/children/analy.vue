@@ -14,11 +14,12 @@
 
 <script lang="ts">
 import {Component,Vue} from "vue-property-decorator";
-import config from '../config';
+import request from '../request';
+import {AnalyModel} from '../interface';
 
 @Component({})
 export default class extends Vue{
-    data:Array<object> = config.analy;
+    data:Array<AnalyModel> = request.analy;
 }
 </script>
 <style lang="scss" scoped>
