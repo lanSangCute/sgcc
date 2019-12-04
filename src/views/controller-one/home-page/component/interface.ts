@@ -11,13 +11,14 @@ interface UnitSliderModel{
   percent?:number;
 }
 
-interface UUnitModel{
+interface UnitModel{
   name?:string;
   percent?:string;
   btnArray?:string;
+  detail?:Array<GridModel>
 }
 
-interface GtidModel{
+interface GridModel{
   title?:string;
   ralation?:string;
   desc?:string;
@@ -29,6 +30,8 @@ interface RankModel{
   rank?:number;
   name?:string;
   type?:string;
+  model?:number;
+  activeName?:string;
 }
 
 interface AssetModel{
@@ -59,8 +62,8 @@ interface Model{
 export {
   ModuleModel,
   UnitSliderModel,
-  UUnitModel,
-  GtidModel,
+  UnitModel,
+  GridModel,
   RankModel,
   AssetModel,
   TableColumnModel,

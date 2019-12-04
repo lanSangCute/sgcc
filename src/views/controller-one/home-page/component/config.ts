@@ -1,11 +1,11 @@
 export default {
     model:[
       {id:1,name:'数据探索',status:'0',url:"https://www.baidu.com/"},
-      {id:2,name:'数据集构建',status:'1',url:"https://www.baidu.com/"},
-      {id:3,name:'数据建模',status:'0',url:"https://www.baidu.com/"},
-      {id:4,name:'模型发布',status:'0',url:"https://www.baidu.com/"},
-      {id:5,name:'服务封装',status:'0',url:"https://www.baidu.com/"},
-      {id:6,name:'产品上架',status:'0',url:"https://www.baidu.com/"}
+      {id:2,name:'数据集构建',status:'1',url:"https://blog.csdn.net/weixin_41931602/article/details/87171118"},
+      {id:3,name:'数据建模',status:'0',url:"https://www.jianshu.com/p/ade38a53b1ac"},
+      {id:4,name:'模型发布',status:'0',url:"https://ejs.bootcss.com/"},
+      {id:5,name:'服务封装',status:'0',url:"https://liulanmi.com/zt/145.html"},
+      {id:6,name:'产品上架',status:'0',url:"https://blog.csdn.net/xjz729827161/article/details/78846175"}
     ],
     assetTHead:[
       {prop:'source',label:'数据源',width:'145px',align:'left'},
@@ -33,9 +33,9 @@ export default {
       {prop:'btnArray',label:'操作',width:'100px',align:'left'},
     ],
     rankGroup:[
-      {label:'data',name:'数据集'},
-      {label:'model',name:'数据模型'},
-      {label:'product',name:'数据产品'}
+      {label:0,name:'数据集'},
+      {label:1,name:'数据模型'},
+      {label:2,name:'数据产品'}
     ],
     rankTHead:[
       {prop:'rank',label:'排名',width:'',align:'left'},

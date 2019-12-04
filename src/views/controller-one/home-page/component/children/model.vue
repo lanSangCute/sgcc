@@ -25,7 +25,7 @@ import {Model} from '../interface';
 export default class extends Vue{
     data:Array<Model> = config.model;
     go(url:string):void{
-        location.href="https://www.baidu.com/";//外部地址
+        location.href=url;//外部地址
         // this.$router.push({})//项目地址
     }
 }

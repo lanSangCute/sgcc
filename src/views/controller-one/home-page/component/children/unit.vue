@@ -10,7 +10,7 @@
                     <el-table :data="gridData">
                         <el-table-column v-for="item in gridThead" :key="item.id" :prop="item.prop" :label="item.label" :width="item.width" :align="item.align"></el-table-column>
                     </el-table>
-                    <span class="color-blue" slot="reference">{{data.row.btnArray}}</span>
+                    <span class="color-blue" slot="reference" @click="getDetail(data.row)">{{data.row.btnArray}}</span>
                     </el-popover>
                 </template>
             </el-table-column>
@@ -22,14 +22,17 @@
 import {Component,Vue} from "vue-property-decorator";
 import config from '../config';
 import request from '../request';
-import {UUnitModel,GtidModel,TableColumnModel} from '../interface';
+import {UnitModel,GridModel,TableColumnModel} from '../interface';
 
 @Component({})
 export default class extends Vue{
-    data:Array<UUnitModel> = request.unitTBody;
+    data:Array<UnitModel> = request.unitTBody;
     thead:Array<TableColumnModel> = config.unitTHead;
-    gridData:Array<GtidModel> = request.gridTBody;
+    gridData:Array<GridModel> = [];
     gridThead:Array<TableColumnModel> = config.gridTHead; 
+    getDetail(row:UnitModel){
+        this.gridData = row.detail || [];
+    }
 }
 </script>
 <style lang="scss">

@@ -1,6 +1,6 @@
 <template>
 <div>
-    <el-radio-group v-model="tabPosition" style="min-width:278px;">
+    <el-radio-group v-model="tabPosition" style="min-width:278px;" @change="changeModel">
         <el-radio-button :label="item.label" v-for="item in rankGroup" :key="item.label">{{item.name}}</el-radio-button>
     </el-radio-group>
     <el-table :data="data" stripe style="width: 100%" max-height="650px">
@@ -33,11 +33,18 @@ import {RankModel,TableColumnModel} from '../interface';
     }
 })
 export default class extends Vue{
-    data:Array<RankModel> = request.rankTBody;
+    data:Array<RankModel> = [];
     thead:Array<TableColumnModel> = config.rankTHead;
-    rankGroup:Array<{label?:string;name?:string}> = config.rankGroup;
-    tabPosition:string = 'data';
+    rankGroup:Array<{label?:number;name?:string}> = config.rankGroup;
+    tabPosition:number = 0;
     @Prop() private active: string;
+    mounted() {
+        this.changeModel();
+    }
+    changeModel(){
+        this.data = request.rankTBody.filter((item:RankModel)=>item.model === this.tabPosition && item.activeName === this.active)
+        this.data.map((item:RankModel,index:number)=>{item.rank = index+1});
+    }
 }
 </script>
 <style lang="scss" scoped>

@@ -44,31 +44,56 @@ export default {
     {name:'字段名描述',percent:84}
   ],
   unitTBody:[
-    {name:'财务管控系统',percent:'89%',btnArray:'详情'},
-    {name:'营销业务应用',percent:'56%',btnArray:'详情'},
-    {name:'PMS2.0',percent:'70%',btnArray:'详情'},
-    {name:'财务管控系统',percent:'65%',btnArray:'详情'},
-    {name:'营销业务应用',percent:'68%',btnArray:'详情'},
-    {name:'营销业务',percent:'68%',btnArray:'详情'}
-  ],
-  gridTBody:[
-    {title:'财务管控系统',ralation:'90%',desc:'90%',item:'90%',total:'90%'},
-    {title:'财务管控系统2',ralation:'90%',desc:'90%',item:'90%',total:'90%'},
+    {name:'财务管控系统',percent:'89%',btnArray:'详情',detail:[
+      {title:'财务管控系统',ralation:'90%',desc:'90%',item:'90%',total:'90%'},
+      {title:'财务管控系统2',ralation:'50%',desc:'90%',item:'90%',total:'90%'},
+    ]},
+    {name:'营销业务应用',percent:'56%',btnArray:'详情',detail:[
+      {title:'营销业务应用',ralation:'90%',desc:'30%',item:'90%',total:'90%'},
+      {title:'营销业务应用2',ralation:'90%',desc:'90%',item:'90%',total:'90%'},
+      {title:'营销业务应用3',ralation:'90%',desc:'90%',item:'90%',total:'90%'}
+    ]},
+    {name:'PMS2.0',percent:'70%',btnArray:'详情',detail:[
+      {title:'PMS2.0',ralation:'30%',desc:'90%',item:'90%',total:'90%'},
+      {title:'PMS2.02',ralation:'90%',desc:'90%',item:'90%',total:'90%'},
+    ]},
+    {name:'财务管控系统',percent:'65%',btnArray:'详情',detail:[
+      {title:'财务管控系统',ralation:'50%',desc:'90%',item:'90%',total:'90%'},
+      {title:'财务管控系统2',ralation:'90%',desc:'90%',item:'90%',total:'90%'},
+    ]},
+    {name:'营销业务应用',percent:'68%',btnArray:'详情',detail:[
+      {title:'营销业务应用',ralation:'70%',desc:'90%',item:'90%',total:'90%'},
+      {title:'营销业务应用2',ralation:'90%',desc:'90%',item:'90%',total:'90%'},
+    ]},
+    {name:'营销业务',percent:'68%',btnArray:'详情',detail:[
+      {title:'营销业务',ralation:'10%',desc:'90%',item:'90%',total:'90%'},
+      {title:'营销业务2',ralation:'90%',desc:'90%',item:'90%',total:'90%'},
+    ]},
   ],
   rankTBody:[
-    {rank:1,name:'北京录用的毕业生人数',type:'用工状况'},
-    {rank:2,name:'上海高技能人才比例',type:'人员素质'},
-    {rank:3,name:'广州组织结构报批率',type:'组织管理'},
-    {rank:4,name:'河北毕业人数',type:'用工状况'},
-    {rank:5,name:'南京高技能人才统计',type:'人员素质'},
-    {rank:6,name:'湖南组织结构',type:'组织管理'},
-    {rank:7,name:'江苏人才率',type:'用工状况'},
-    {rank:8,name:'河南人力培养计划',type:'人员素质'},
-    {rank:9,name:'山东组织机构',type:'组织管理'},
-    {rank:10,name:'浙江组织机构',type:'用工状况'},
-    {rank:11,name:'浙江组织机构',type:'用工状况'},
-    {rank:12,name:'浙江组织机构',type:'用工状况'},
-    {rank:13,name:'浙江组织机构',type:'用工状况'},
-    {rank:14,name:'浙江组织机构',type:'用工状况'}
+    {rank:1,name:'北京录用的毕业生人数',type:'用工状况',model:0,activeName:'hot'},
+    {rank:2,name:'上海高技能人才比例',type:'人员素质',model:1,activeName:'hot'},
+    {rank:3,name:'广州组织结构报批率',type:'组织管理',model:2,activeName:'hot'},
+    {rank:4,name:'河北毕业人数',type:'用工状况',model:0,activeName:'hot'},
+    {rank:5,name:'南京高技能人才统计',type:'人员素质',model:0,activeName:'new'},
+    {rank:6,name:'湖南组织结构',type:'组织管理',model:2,activeName:'hot'},
+    {rank:7,name:'江苏人才率',type:'用工状况',model:0,activeName:'new'},
+    {rank:8,name:'河南人力培养计划',type:'人员素质',model:0,activeName:'hot'},
+    {rank:9,name:'山东组织机构',type:'组织管理',model:2,activeName:'new'},
+    {rank:10,name:'浙江组织机构',type:'用工状况',model:0,activeName:'new'},
+    {rank:11,name:'浙江组织机构1',type:'用工状况',model:1,activeName:'hot'},
+    {rank:12,name:'浙江组织机构2',type:'组织管理',model:1,activeName:'new'},
+    {rank:13,name:'浙江组织机构3',type:'组织管理',model:1,activeName:'hot'},
+    {rank:14,name:'浙江组织机构4',type:'用工状况',model:0,activeName:'new'},
+    {rank:15,name:'浙江组织机构5',type:'人员素质',model:0,activeName:'hot'},
+    {rank:16,name:'浙江组织机构6',type:'用工状况',model:0,activeName:'hot'},
+    {rank:17,name:'浙江组织机构7',type:'用工状况',model:0,activeName:'hot'},
+    {rank:18,name:'浙江组织机构8',type:'人员素质',model:0,activeName:'new'},
+    {rank:19,name:'浙江组织机构9',type:'用工状况',model:0,activeName:'hot'},
+    {rank:20,name:'湖北组织机构1',type:'组织管理',model:0,activeName:'hot'},
+    {rank:21,name:'湖北组织机构2',type:'人员素质',model:0,activeName:'new'},
+    {rank:22,name:'湖北组织机构3',type:'组织管理',model:0,activeName:'hot'},
+    {rank:23,name:'湖北组织机构4',type:'人员素质',model:0,activeName:'new'},
+    {rank:24,name:'湖北组织机构5',type:'用工状况',model:0,activeName:'hot'},
   ]
 };
