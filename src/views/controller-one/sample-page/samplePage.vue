@@ -1,5 +1,5 @@
 <template>
-    <div>sample</div>
+    <iframe onload="this.height=document.documentElement.clientHeight" src="https://www.baidu.com/" id="iframepage" frameborder="0" width="100%!important"></iframe>
 </template>
 
 <script lang="ts">
