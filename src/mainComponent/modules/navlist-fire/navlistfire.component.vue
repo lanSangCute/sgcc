@@ -162,7 +162,8 @@ export default class extends Vue{
     }
     clickPrimary(i:NavListItem){
         this.setOpenSecondary(i);
-        if(i.path)this.routerNav(i.path);
+        // if(i.path)this.routerNav(i.path);
+        if(i.path) i.path.indexOf('http')>-1?location.href=i.path:this.routerNav(i.path);
     }
     clickSecondary(i:NavListItem){
       if(i.path)this.routerNav(i.path);
