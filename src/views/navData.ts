@@ -19,7 +19,8 @@ export {
 // ];
 export const navData:NavListItem[]= [
   {path:"/controller/home-page",label:"首页",icon:"account"},
-  {path:"/controller/sample-page",label:"数据探索",icon:"explore",children:[]},
+  {path:"/controller/sample-page?src=https://www.baidu.com/",label:"数据探索",icon:"explore",children:[]},
+  {path:"/controller/sample-page?src=https://tieba.baidu.com/index.html",label:"数据贴吧",icon:"explore",children:[]},
   {path:"/controller/sample2-page",label:"数据建模",icon:'model',children:[]},
   {path:"/controller/sample3-page",label:"产品管理",icon:'manage',children:[]}
 ];
