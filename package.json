@@ -16,7 +16,7 @@
     "@types/chart.js": "^2.9.3",
     "cache-ajax": "3.0.0",
     "canvas-nest.js": "^2.0.4",
-    "chart.js": "^2.9.3",
+    "chart.js": "^2.9.4",
     "commander": "^4.0.0",
     "copy-dir": "^1.2.0",
     "core-js": "^2.6.5",
